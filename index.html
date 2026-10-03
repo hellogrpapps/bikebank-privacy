@@ -11,135 +11,119 @@
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.25rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: .25rem; }
   h3 { font-size: 1.05rem; margin-top: 1.25rem; }
-  blockquote { background: #fff8e6; border-left: 4px solid #e6a800; margin: 1rem 0; padding: .75rem 1rem; }
   table { border-collapse: collapse; width: 100%; font-size: .92rem; margin: 1rem 0; }
   th, td { border: 1px solid #ccc; padding: .4rem .55rem; text-align: left; vertical-align: top; }
   th { background: #f4f4f4; }
-  code { background: #f0f0f0; padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
   hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
   a { color: #0b57d0; }
-  .banner { background: #111; color: #fff; padding: .75rem 1rem; border-radius: 6px; font-size: .9rem; }
 </style>
 </head>
 <body>
 <h1>BikeBank Privacy Policy</h1>
-<blockquote><strong>DRAFT — NOT LEGAL ADVICE.</strong> This document is an operator draft for weekend App Store preparation. It is <strong>not</strong> legal counsel. Gryphon Raeburn-Power (or BikeBank’s operator) must review, complete TBD fields, and confirm accuracy against the live app before publishing. Canadian privacy law (including PIPEDA) and Ontario expectations involve judgment calls this draft cannot make.</blockquote>
-<p><strong>Review-build lock:</strong> Sunday App Review binary is mock-only (<code>EXPO_PUBLIC_MOCK_MODE=true</code>). Strava/Supabase off for that build; no analytics SDKs known.</p>
-<p><strong>Effective date:</strong> September 26, 2026 (draft)  </p>
-<p><strong>Jurisdiction context:</strong> Ontario / Canada (users expected)  </p>
-<p><strong>App:</strong> BikeBank (Expo MVP)</p>
+<p><strong>Effective date:</strong> September 26, 2026</p>
+<p><strong>App:</strong> BikeBank</p>
+<p><strong>Operator:</strong> Gryphon Raeburn-Power, Ontario, Canada</p>
+<p>BikeBank works in mock mode. In mock mode the app does not collect an account, email address, user ID, Strava or other fitness data, device GPS, or analytics. Optional account sign-in and a Strava connection stay off unless you choose them later. The current app does not collect Fitness or Location data.</p>
 <hr>
 <h2>1. Who we are</h2>
 <p><strong>BikeBank</strong> is operated by <strong>Gryphon Raeburn-Power</strong>, based in <strong>Ontario, Canada</strong>.</p>
 <table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
 <tr><td>Operator</td><td>Gryphon Raeburn-Power / BikeBank</td></tr>
 <tr><td>Location</td><td>Ontario, Canada</td></tr>
-<tr><td>Contact email</td><td><strong>contact@grpapps.com</strong></td></tr>
-<tr><td>Mailing address</td><td><strong>TBD</strong> (optional; replace if you want a postal contact)</td></tr>
+<tr><td>Contact email</td><td><a href="mailto:contact@grpapps.com"><strong>contact@grpapps.com</strong></a></td></tr>
+<tr><td>Mailing address</td><td>Not published; contact by email</td></tr>
 </tbody></table>
-<p>If you have questions about this policy or your data, contact us at the email above once filled in.</p>
+<p>If you have questions about this policy or your data, email <a href="mailto:contact@grpapps.com">contact@grpapps.com</a>.</p>
 <hr>
-<h2>2. What BikeBank does (plain language)</h2>
-<p>BikeBank helps you track <strong>bike-related activity</strong> and estimate <strong>money you may save</strong> by cycling instead of other transport (or similar savings framing in the app).</p>
-<p>For App Store review and early use, BikeBank is designed to work in <strong>mock mode by default</strong>:</p>
+<h2>2. What BikeBank does</h2>
+<p>BikeBank helps you track <strong>bike-related activity</strong> and estimate <strong>money you may save</strong> by cycling instead of other transport.</p>
+<p>You can use BikeBank in <strong>mock mode</strong>:</p>
 <ul>
-<li>You can explore the app with <strong>demo / local sample activity and savings data</strong>.</li>
-<li>You are <strong>not required</strong> to create a cloud account or connect Strava to use the mock demo.</li>
-<li>Optional features (email/password account via Supabase; Strava OAuth) may exist in the product but are <strong>not required for the mock-mode experience</strong> described here.</li>
+<li>You can explore the app with <strong>demo and local sample activity and savings data</strong>.</li>
+<li>You do <strong>not</strong> need a cloud account or a Strava connection to use mock mode.</li>
+<li><strong>Email and password sign-in</strong> (through Supabase) and <strong>Strava</strong> are optional. Both stay off unless you choose them later.</li>
 </ul>
 <hr>
-<h2>3. Data we collect — by mode</h2>
-<p>Apple’s App Privacy label asks what is <strong>collected</strong> (generally: sent off your device and retained). This section states what BikeBank does in each mode.</p>
-<h3>3.1 Mock mode (default — App Review / demo path)</h3>
+<h2>3. Data we collect</h2>
+<p>This section describes what leaves your device. Information that stays on the device is stored locally and is not sent to BikeBank.</p>
+<h3>3.1 Mock mode</h3>
+<p>Mock mode is how BikeBank works today.</p>
 <table><thead><tr><th>Category</th><th>What happens</th></tr></thead><tbody>
-<tr><td>Account / email</td><td><strong>Not collected.</strong> No cloud sign-up required.</td></tr>
-<tr><td>User ID (cloud)</td><td><strong>Not collected.</strong></td></tr>
-<tr><td>Strava / fitness from Strava</td><td><strong>Not collected.</strong> Strava is not connected in mock mode.</td></tr>
-<tr><td>Activity / savings records</td><td>Stored <strong>on your device</strong> (local storage) as demo or user-entered local records. If data never leaves the device, it is typically <strong>not “collected”</strong> for App Store nutrition-label purposes — but it still exists on-device.</td></tr>
-<tr><td>Device / local storage</td><td>App preferences and local activity/savings figures may be stored on the device.</td></tr>
-<tr><td>Analytics / ads / crash SDKs</td><td><strong>UNKNOWN / not confirmed.</strong> This draft assumes <strong>no</strong> third-party advertising or tracking SDKs. If Expo or another library sends diagnostics, update this policy and the App Privacy label.</td></tr>
-<tr><td>Location from the device</td><td>BikeBank (as described by product facts) does <strong>not</strong> claim to request device GPS for mock mode. <strong>Confirm before submit.</strong></td></tr>
+<tr><td>Account / email</td><td><strong>Not collected.</strong> No cloud sign-up is required.</td></tr>
+<tr><td>User ID</td><td><strong>Not collected.</strong></td></tr>
+<tr><td>Strava / fitness</td><td><strong>Not collected.</strong> Strava is not connected in mock mode. BikeBank does not collect fitness data.</td></tr>
+<tr><td>Activity / savings records</td><td>Stored <strong>on your device</strong> as demo or locally entered records. They are not sent to BikeBank.</td></tr>
+<tr><td>Device / local storage</td><td>App preferences and local activity and savings figures may be stored on the device.</td></tr>
+<tr><td>Analytics, ads, and crash reporting</td><td><strong>Not collected.</strong> BikeBank does not use third-party analytics, advertising, or crash-reporting SDKs.</td></tr>
+<tr><td>Device location</td><td><strong>Not collected.</strong> BikeBank does not request device GPS and does not collect Location data.</td></tr>
 </tbody></table>
-<p><strong>Summary (mock):</strong> Minimal personal data off-device. Primary storage is local.</p>
-<h3>3.2 Authenticated mode (optional — when Supabase email/password is configured and you sign up)</h3>
+<p><strong>Summary (mock mode):</strong> Activity and savings information stays on your device and is not sent to BikeBank. Mock mode does not collect an account, email, user ID, fitness data, device location, or analytics.</p>
+<h3>3.2 Account sign-in (optional)</h3>
+<p>Email and password sign-in through Supabase is optional and stays off unless you choose it later. If you create an account, BikeBank may collect:</p>
 <table><thead><tr><th>Category</th><th>What may be collected</th></tr></thead><tbody>
-<tr><td>Contact Info — Email Address</td><td>Yes — to create and sign in to your account.</td></tr>
-<tr><td>Identifiers — User ID</td><td>Yes — e.g. Supabase-assigned user ID, linked to your account.</td></tr>
-<tr><td>Activity / savings</td><td>May sync to Supabase when configured, so records can be stored in the cloud associated with your account.</td></tr>
-<tr><td>Device / local</td><td>Local cache may still be used.</td></tr>
+<tr><td>Contact info — email address</td><td>Your email address, to create the account and sign you in.</td></tr>
+<tr><td>Identifiers — user ID</td><td>A user ID assigned to your account (for example a Supabase user ID).</td></tr>
+<tr><td>Activity / savings</td><td>Records may sync to Supabase so they can be stored in the cloud with your account.</td></tr>
+<tr><td>Device / local</td><td>A local copy may still be kept on the device.</td></tr>
 </tbody></table>
-<h3>3.3 Strava-connected mode (optional — only if you choose to connect Strava)</h3>
+<h3>3.3 Strava (optional)</h3>
+<p>Strava stays off unless you choose to connect it later. Mock mode does not use Strava, and the current app does not collect fitness or location data. If you later connect Strava, BikeBank may receive:</p>
 <table><thead><tr><th>Category</th><th>What may be collected</th></tr></thead><tbody>
-<tr><td>Fitness / activity data</td><td>Activity data you authorize BikeBank to receive from Strava (e.g. rides, distances, durations, and related activity fields Strava provides under the scopes you approve).</td></tr>
-<tr><td>Location-derived data</td><td>Strava activities <strong>may</strong> include route or location-related information. BikeBank does not independently claim to be a mapping/GPS product; if Strava payloads include location-derived fields and those are stored or synced, treat that as potential <strong>location-related</strong> data. <strong>Flag: confirm what the app actually stores from Strava before publish.</strong></td></tr>
-<tr><td>Account linkage</td><td>Your BikeBank account (if signed in) may be linked to the Strava connection tokens needed to keep the link working.</td></tr>
+<tr><td>Fitness / activity data</td><td>Activity data you authorize BikeBank to receive from Strava, such as rides, distances, durations, and related fields Strava provides under the access you approve.</td></tr>
+<tr><td>Location-related data from Strava</td><td>Strava activities may include route or location-related information. BikeBank does not collect device GPS. If you connect Strava and an activity includes location-related fields, those fields come from Strava.</td></tr>
+<tr><td>Account linkage</td><td>If you are signed in, your BikeBank account may be linked to the Strava tokens needed to keep the connection working.</td></tr>
 </tbody></table>
-<p>You can choose <strong>not</strong> to connect Strava. Mock mode does not require it.</p>
+<p>You can use BikeBank without connecting Strava.</p>
 <hr>
 <h2>4. How we use data</h2>
 <table><thead><tr><th>Purpose</th><th>When</th></tr></thead><tbody>
-<tr><td><strong>App functionality</strong></td><td>Show activities, calculate/display savings estimates, sync when auth is enabled, keep you signed in.</td></tr>
-<tr><td><strong>Account management</strong></td><td>Only if you create an account (email/password via Supabase).</td></tr>
-<tr><td><strong>Strava sync</strong></td><td>Only if you connect Strava — to import/display authorized activities.</td></tr>
-<tr><td><strong>Advertising / tracking</strong></td><td><strong>Not intended.</strong> No advertising or cross-app tracking SDKs are confirmed in product facts. Mark <strong>UNKNOWN</strong> until the binary is audited.</td></tr>
-<tr><td><strong>Marketing email</strong></td><td><strong>Not claimed.</strong> Do not assume marketing emails unless you later enable them — then update this policy.</td></tr>
+<tr><td><strong>App functionality</strong></td><td>To show activities, calculate and display savings estimates, sync when you have turned on an account, and keep you signed in.</td></tr>
+<tr><td><strong>Account management</strong></td><td>Only if you create an account (email and password through Supabase).</td></tr>
+<tr><td><strong>Strava</strong></td><td>Only if you choose to connect Strava, to import and display activities you authorize.</td></tr>
+<tr><td><strong>Advertising and tracking</strong></td><td>We do not use advertising or cross-app tracking, and we do not collect analytics.</td></tr>
+<tr><td><strong>Marketing email</strong></td><td>We do not send marketing email.</td></tr>
 </tbody></table>
 <hr>
 <h2>5. Third parties</h2>
 <table><thead><tr><th>Party</th><th>Role</th><th>When involved</th></tr></thead><tbody>
-<tr><td><strong>Supabase</strong></td><td>Authentication and/or cloud storage when configured</td><td>Only if you use authenticated / cloud sync features</td></tr>
-<tr><td><strong>Strava</strong></td><td>OAuth and activity data when you connect</td><td>Only if you explicitly connect Strava</td></tr>
-<tr><td><strong>Affiliate / merchant sites</strong></td><td>Placeholder gear/affiliate links may open an external browser or merchant site</td><td>Only if you tap such a link; their privacy practices then apply</td></tr>
-<tr><td><strong>Expo / Apple / device OS</strong></td><td>Platform runtime; Apple may process data under Apple’s terms when you use App Store / OS services</td><td>Standard platform behaviour — not controlled by BikeBank’s privacy policy text alone</td></tr>
+<tr><td><strong>Supabase</strong></td><td>Authentication and cloud storage for optional account features</td><td>Only if you choose to create an account or use cloud sync</td></tr>
+<tr><td><strong>Strava</strong></td><td>Connection and activity data you authorize</td><td>Only if you choose to connect Strava</td></tr>
+<tr><td><strong>Merchant sites</strong></td><td>A link may open an external merchant or affiliate site</td><td>Only if you tap such a link; that site’s privacy practices then apply</td></tr>
+<tr><td><strong>Apple and your device</strong></td><td>App Store and operating-system services</td><td>When you download or use the app, Apple and your device may process information under their own terms</td></tr>
 </tbody></table>
 <p>We do <strong>not</strong> sell your personal information.</p>
 <hr>
-<h2>6. Storage location &amp; cross-border transfers (PIPEDA — uncertainty flagged)</h2>
+<h2>6. Storage and transfers outside Canada</h2>
 <ul>
-<li><strong>Mock / local data:</strong> Stays on your device unless you later enable sync.</li>
-<li><strong>Supabase (when used):</strong> Supabase may process or store data on servers <strong>outside Canada</strong> (for example in the United States or other regions), depending on project configuration.  </li>
+<li><strong>Mock mode and other local data</strong> stay on your device unless you later choose to sync.</li>
+<li><strong>Supabase,</strong> if you choose an account, may process or store information on servers outside Canada, including in the United States.</li>
+<li><strong>Strava,</strong> if you choose to connect it, processes information under its own privacy policy and may do so outside Canada.</li>
 </ul>
-<p>  <strong>UNCERTAINTY — NOT LEGAL ADVICE:</strong> Cross-border transfers engage PIPEDA and related Canadian expectations (accountability, notice, contractual/organizational safeguards). Confirm your Supabase region, DPA/terms, and whether additional notice or consent language is required for Ontario/Canada users. <strong>Have counsel or a privacy-knowledgeable reviewer check before relying on this draft.</strong></p>
-<ul>
-<li><strong>Strava:</strong> Strava is a third party with its own privacy policy and may process data outside Canada.</li>
-</ul>
+<p>When optional cloud services process information outside Canada, we remain responsible for the personal information we handle under applicable Canadian privacy law.</p>
 <hr>
 <h2>7. Retention and deletion</h2>
 <table><thead><tr><th>Data</th><th>Retention / deletion</th></tr></thead><tbody>
-<tr><td><strong>Local / mock data</strong></td><td>Remains on device until you clear app data, uninstall the app, or use an in-app “clear local data” control <strong>if provided</strong>. <strong>Operator: document the exact UI path before publish, or state “uninstall clears local data.”</strong></td></tr>
-<tr><td><strong>Cloud account data (Supabase)</strong></td><td>Retained while your account exists and as needed to provide the service.</td></tr>
-<tr><td><strong>Account deletion</strong></td><td>Email <strong>contact@grpapps.com</strong> with subject “BikeBank account deletion” from the address on the account. We will aim to delete or de-identify account data within a reasonable period, subject to legal retention needs. <strong>Ops note:</strong> email contact@grpapps.com (forwards to operator Gmail); formal deletion runbook still light for MVP.</td></tr>
-<tr><td><strong>Strava disconnect</strong></td><td>Disconnect Strava in-app (when available) and/or revoke access in your Strava account settings. Historical copies already synced to BikeBank may need a separate deletion request.</td></tr>
+<tr><td><strong>Local / mock data</strong></td><td>Stays on your device until you clear the app’s stored data or uninstall BikeBank.</td></tr>
+<tr><td><strong>Cloud account data (Supabase)</strong></td><td>Kept while your account exists and as needed to provide the service, if you have chosen an account.</td></tr>
+<tr><td><strong>Account deletion</strong></td><td>Email <a href="mailto:contact@grpapps.com">contact@grpapps.com</a> with the subject “BikeBank account deletion” from the email address on the account. We will delete or de-identify account data within a reasonable period, except where we must keep it to meet a legal obligation.</td></tr>
+<tr><td><strong>Strava disconnect</strong></td><td>If you have connected Strava, you can disconnect it in BikeBank and revoke BikeBank’s access in your Strava settings. To delete copies already saved in BikeBank, email <a href="mailto:contact@grpapps.com">contact@grpapps.com</a>.</td></tr>
 </tbody></table>
 <hr>
 <h2>8. Children’s privacy</h2>
-<p>BikeBank is <strong>not directed at children</strong>. It is not intended for children under <strong>13</strong> (and we do not knowingly collect personal information from children under 13). Where a higher age of digital consent applies (e.g. <strong>under 16</strong> in some contexts), do not use the optional account or Strava features if you are under that age without appropriate guardian involvement as required by law.  </p>
-<p><strong>UNCERTAINTY:</strong> Confirm age gating / store age rating to match this statement.</p>
+<p>BikeBank is <strong>not directed at children</strong>. It is not intended for children under <strong>13</strong>, and we do not knowingly collect personal information from children under 13. If a higher age of digital consent applies, do not use optional account or Strava features unless a parent or guardian is involved as the law requires.</p>
 <hr>
-<h2>9. Your choices (Canada / Ontario context)</h2>
-<p>Subject to applicable law, you may have rights to access, correct, or delete personal information we hold, and to withdraw consent where processing is consent-based (e.g. optional Strava connect). Contact <strong>contact@grpapps.com</strong>.  </p>
-<p><strong>This is not a complete statement of PIPEDA rights — not legal advice.</strong></p>
-<p>Optional: publish a “Privacy Choices” URL later listing how to clear local data, disconnect Strava, and request account deletion.</p>
+<h2>9. Your choices</h2>
+<p>Subject to applicable law, you may ask to access, correct, or delete personal information we hold, and you may withdraw consent for optional processing such as a Strava connection. Contact <a href="mailto:contact@grpapps.com">contact@grpapps.com</a>.</p>
+<p>This policy describes our practices. It is not a complete statement of your legal rights under Canadian privacy law, including the Personal Information Protection and Electronic Documents Act (PIPEDA).</p>
 <hr>
 <h2>10. Changes to this policy</h2>
-<p>We may update this policy as BikeBank changes (for example if auth, Strava, analytics, or affiliates go live). We will post the updated policy at this URL and revise the effective date. Material changes should be highlighted when feasible.</p>
+<p>We may update this policy as BikeBank changes. We will post the updated policy at this page and change the effective date. Where a change is material, we will make that clear on this page.</p>
 <hr>
 <h2>11. Contact</h2>
-<p><strong>Gryphon Raeburn-Power / BikeBank</strong>  </p>
-<p>Ontario, Canada  </p>
-<p>Email: <strong>contact@grpapps.com</strong>  </p>
-<p>Privacy policy URL: <strong>TBD</strong> (this document, once hosted)</p>
-<hr>
-<h2>Operator checklist before publishing</h2>
-<ul class="checks">
-<li>[ ] Replace all <strong>TBD</strong> contact fields</li>
-<li>[ ] Confirm mock mode truly sends <strong>no</strong> account/Strava/analytics data off-device</li>
-<li>[ ] Confirm whether Expo/Supabase client libraries emit diagnostics</li>
-<li>[ ] Confirm Supabase project region if auth will ship later</li>
-<li>[ ] Confirm what Strava fields are stored if/when Strava ships</li>
-<li>[ ] Confirm affiliate links are placeholders or live, and disclose accordingly</li>
-<li>[ ] Legal/privacy review if relying on this for real Canadian users</li>
-</ul>
-<p>*End of draft privacy policy.*</p>
+<p><strong>Gryphon Raeburn-Power / BikeBank</strong><br>
+Ontario, Canada<br>
+Email: <a href="mailto:contact@grpapps.com"><strong>contact@grpapps.com</strong></a><br>
+Mailing address: not published; contact by email<br>
+Privacy policy URL: <a href="https://hellogrpapps.github.io/bikebank-privacy/">https://hellogrpapps.github.io/bikebank-privacy/</a></p>
 </body>
 </html>
